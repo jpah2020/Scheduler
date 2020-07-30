@@ -12,154 +12,108 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-    <script src=script.js></script>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
     <title>Work Day Scheduler</title>
 </head>
 
 <body>
-    <header class="jumbotron">
-        <h1 class="display-3">Work Day Scheduler</h1>
-        <p class="lead">A simple calendar app for scheduling your work day</p>
+    
+    <header class="jumbotron";>
+        <img src="work.jpg" style="width:1000px;height:200px;opacity: 0.8;"> 
+        <h1 class="display-3" style = "color: darkred">Work Day Scheduler</h1>
+        <p class="lead" style = "color: rgb(78, 10, 10)">A simple calendar app for scheduling your work day</p>
         <p id="currentDay" class="lead"></p>
     </header>
 
     <!-- Timeblocks go here -->
-    <div class="container" style="background-color: lightgrey; padding-left: 25%; ">
+    <div class="container" style= padding-left: 25%;>
         <ul>
             <li>
-                <span>09 AM</span>
-                <input type="text" id="9am" />
-                <button time="#9am">Save</button>
+                <div class="input-group mb-3">
+                    <span>09 AM</span>
+                    <input type="text" class="form-control" placeholder="Activity" aria-label="Activity" aria-describedby="button-addon2" id="9am"/>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2" time="#9am">Save</button>
+                    </div>
+                  </div>
             </li>
             <li>
-                <span>10 AM</span>
-                <input type="text" id="10am" />
-                <button time="#10am">Save</button>
+                <div class="input-group mb-3">
+                    <span>10 AM</span>
+                    <input type="text" class="form-control" placeholder="Activity" aria-label="Activity" aria-describedby="button-addon2" id="10am"/>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2" time="#10am">Save</button>
+                    </div>
+                  </div>
             </li>
             <li>
-                <span>11 AM</span>
-                <input type="text" id="11am" />
-                <button time="#11am">Save</button>
+                <div class="input-group mb-3">
+                    <span>11 AM</span>
+                    <input type="text" class="form-control" placeholder="Activity" aria-label="Activity" aria-describedby="button-addon2" id="11am"/>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2" time="#11am">Save</button>
+                    </div>
+                  </div>
             </li>
             <li>
-                <span>12 PM</span>
-                <input type="text" id="12pm" />
-                <button time="#12pm">Save</button>
+                <div class="input-group mb-3">
+                    <span>12 PM</span>
+                    <input type="text" class="form-control" placeholder="Activity" aria-label="Activity" aria-describedby="button-addon2" id="12pm"/>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2" time="#12pm">Save</button>
+                    </div>
+                  </div>
             </li>
             <li>
-                <span>01 PM</span>
-                <input type="text" id="1pm" />
-                <button time="#13pm">Save</button>
+                <div class="input-group mb-3">
+                    <span>01 PM</span>
+                    <input type="text" class="form-control" placeholder="Activity" aria-label="Activity" aria-describedby="button-addon2" id="1pm"/>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2" time="#1pm">Save</button>
+                    </div>
+                  </div>
             </li>
             <li>
-                <span>02 PM</span>
-                <input type="text" id="2pm" />
-                <button time="#2pm">Save</button>
+                <div class="input-group mb-3">
+                    <span>02 PM</span>
+                    <input type="text" class="form-control" placeholder="Activity" aria-label="Activity" aria-describedby="button-addon2" id="2pm"/>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2" time="#2pm">Save</button>
+                    </div>
+                  </div>
             </li>
             <li>
-                <span>03 PM</span>
-                <input type="text" id="3pm" />
-                <button time="#3pm">Save</button>
+                <div class="input-group mb-3">
+                    <span>03 PM</span>
+                    <input type="text" class="form-control" placeholder="Activity" aria-label="Activity" aria-describedby="button-addon2" id="3pm"/>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2" time="#3pm">Save</button>
+                    </div>
+                  </div>
             </li>
             <li>
-                <span>04 PM</span>
-                <input type="text" id="4pm" />
-                <button time="#4pm">Save</button>
+                <div class="input-group mb-3">
+                    <span>04 PM</span>
+                    <input type="text" class="form-control" placeholder="Activity" aria-label="Activity" aria-describedby="button-addon2" id="4pm"/>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2" time="#4pm">Save</button>
+                    </div>
+                  </div>
             </li>
             <li>
-                <span>05 PM</span>
-                <input type="text" id="5pm" />
-                <button time="#5pm">Save</button>
+                <div class="input-group mb-3">
+                    <span>05 PM</span>
+                    <input type="text" class="form-control" placeholder="Activity" aria-label="Activity" aria-describedby="button-addon2" id="5pm"/>
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2" time="#5pm">Save</button>
+                    </div>
+                  </div>
             </li>
         </ul>
     </div>
 
-    <script>
-
-        $("button").on("click", function () {
-            var timeId = $(this).attr("time");
-            var userTask = $(timeId).val();
-            localStorage.setItem(timeId, userTask);
-        });
-
-        var nineAm = localStorage.getItem("#9am");
-        if (nineAm) {
-            $("#9am").val(nineAm);
-        }
-
-        for (var i = 9; i < 17; i++) {
-
-            //var today = new Date();//
-            //var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();//
-            var amPm = "am";
-            if (i >= 12) {
-                amPm = "pm";
-            }
-            var hour = i;
-            if (i > 12) {
-                hour -= 12;
-            }
-
-            var targetId = "#" + hour + amPm;
-
-            var className = "future";
-            // If currentTime > i => class future
-            // else if currentTime < i class past
-            // else class current
-
-            $(targetId).addClass(className);
-
-
-        }
-
-        var tenAm = localStorage.getItem("#10am");
-        if (tenAm) {
-            $("#10am").val(tenAm);
-        }
-
-        var elevenAm = localStorage.getItem("#11am");
-        if (elevenAm) {
-            $("#11am").val(elevenAm);
-        }
-
-        var twelvePm = localStorage.getItem("#12pm");
-        if (twelvePm) {
-            $("#12pm").val(twelvePm);
-        }
-
-        var onePm = localStorage.getItem("#1pm");
-        if (onePm) {
-            $("#1pm").val(onePm);
-        }
-
-        var twoPm = localStorage.getItem("#2pm");
-        if (twoPm) {
-            $("#2pm").val(twoPm);
-        }
-
-        var threePm = localStorage.getItem("#3pm");
-        if (threePm) {
-            $("#12pm").val(threePm);
-        }
-
-        var fourPm = localStorage.getItem("#4pm");
-        if (fourPm) {
-            $("#12pm").val(fourPm);
-        }
-
-        var fivePm = localStorage.getItem("#5pm");
-        if (fivePm) {
-            $("#5pm").val(fivePm);
-        }
-
-
-        /// Moment JS examples
-        console.log(moment().format("MM/DD/YYY"));
-        console.log(moment().format("HH:mm A"));
-        console.log(moment().format("h:mm a"));
-    </script>
-
-
+   
+<script src=script.js></script>
 
 </body>
 
